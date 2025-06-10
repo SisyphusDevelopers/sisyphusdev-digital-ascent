@@ -10,6 +10,7 @@ const ServicesSection = () => {
       features: ["React & Angular", "Node.js & Spring Boot", "APIs RESTful", "Arquitectura escalable"],
       gradient: "bg-gradient-sisyphus"
     },
+      /*
     {
       icon: Smartphone,
       title: "Aplicaciones Móviles",
@@ -24,6 +25,8 @@ const ServicesSection = () => {
       features: ["Desarrollo ágil", "Validación temprana", "Iteración rápida", "Time-to-market optimizado"],
       gradient: "bg-gradient-warm"
     },
+      
+       */
     {
       icon: Wrench,
       title: "Consultoría Técnica",
