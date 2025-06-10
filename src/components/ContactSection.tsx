@@ -2,6 +2,8 @@
 import { useState } from 'react';
 import { Mail, MessageSquare, User, Send } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import emailjs from 'emailjs-com';
+import * as React from "react";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -23,15 +25,28 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-
-    toast({
-      title: "¡Mensaje enviado!",
-      description: "Nos pondremos en contacto contigo pronto.",
-    });
-
-    setFormData({ name: '', email: '', message: '' });
+    try {
+      await emailjs.send(
+          'service_go98bj9', // Replace with your EmailJS service ID
+          'template_6h80e8e', // Replace with your EmailJS template ID
+          {
+            from_name: formData.name,
+            from_email: formData.email,
+            message: formData.message,
+          },
+          't31Q-zq_3FzNChM7A' // Replace with your EmailJS user/public key
+      );
+      toast({
+        title: "¡Mensaje enviado!",
+        description: "Nos pondremos en contacto contigo pronto.",
+      });
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "No se pudo enviar el mensaje. Intenta de nuevo.",
+      });
+    }
     setIsSubmitting(false);
   };
 
@@ -97,10 +112,10 @@ const ContactSection = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-electric text-white py-4 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed hover-lift"
+                className="w-full bg-gradient-electric text-black py-4 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed hover-lift"
               >
                 {isSubmitting ? (
-                  <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
+                  <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-black"></div>
                 ) : (
                   <>
                     <Send size={20} />
@@ -162,12 +177,12 @@ const ContactSection = () => {
             </div>
 
             {/* Contact details */}
-            <div className="bg-gradient-electric rounded-2xl p-6 text-white">
+            <div className="bg-gradient-electric rounded-2xl p-6 text-black">
               <h4 className="text-xl font-bold mb-4">Información de contacto</h4>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Mail size={18} />
-                  <span>hola@sisyphusdev.com</span>
+                  <span>sisyphusdevelopers@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MessageSquare size={18} />
