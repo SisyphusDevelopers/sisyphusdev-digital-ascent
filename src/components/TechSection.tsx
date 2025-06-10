@@ -5,10 +5,10 @@ const TechSection = () => {
     { name: "Angular", category: "Frontend", color: "from-sisyphus-purple to-sisyphus-pink" },
     { name: "Node.js", category: "Backend", color: "from-sisyphus-sage to-sisyphus-teal" },
     { name: "Spring Boot", category: "Backend", color: "from-sisyphus-secondary to-sisyphus-purple" },
-    { name: "PostgreSQL", category: "Database", color: "from-sisyphus-accent to-sisyphus-secondary" },
-    { name: "Docker", category: "DevOps", color: "from-sisyphus-teal to-sisyphus-sage" },
+    { name: "MySQL", category: "Database", color: "from-sisyphus-accent to-sisyphus-secondary" },
     { name: "AWS", category: "Cloud", color: "from-sisyphus-orange to-sisyphus-accent" },
     { name: "TypeScript", category: "Language", color: "from-sisyphus-purple to-sisyphus-secondary" },
+    { name: "Java", category: "Language", color: "from-sisyphus-secondary to-sisyphus-teal" },
   ];
 
   return (
