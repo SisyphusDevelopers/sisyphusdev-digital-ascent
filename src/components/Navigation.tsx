@@ -66,6 +66,12 @@ const Navigation = () => {
                 Tecnologías
               </button>
               <button 
+                onClick={() => scrollToSection('catalogo')}
+                className="text-sisyphus-dark hover:text-sisyphus-medium transition-colors duration-200 font-medium"
+              >
+                Catálogo
+              </button>
+              <button 
                 onClick={() => scrollToSection('contacto')}
                 className="bg-gradient-sisyphus text-white px-6 py-2 rounded-lg hover:shadow-lg transition-all duration-300 font-medium"
               >
@@ -112,6 +118,12 @@ const Navigation = () => {
                 className="block px-3 py-2 text-sisyphus-dark hover:text-sisyphus-medium transition-colors duration-200 font-medium w-full text-left"
               >
                 Tecnologías
+              </button>
+              <button 
+                onClick={() => scrollToSection('catalogo')}
+                className="block px-3 py-2 text-sisyphus-dark hover:text-sisyphus-medium transition-colors duration-200 font-medium w-full text-left"
+              >
+                Catálogo
               </button>
               <button 
                 onClick={() => scrollToSection('contacto')}

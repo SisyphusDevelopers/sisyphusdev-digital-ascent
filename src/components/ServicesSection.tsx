@@ -45,7 +45,7 @@ const ServicesSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <div key={index} className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 group hover-lift">
-              <div className="w-16 h-16 bg-gradient-electric rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 bg-gradient-sisyphus rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <service.icon size={32} className="text-white" />
               </div>
               
@@ -60,31 +60,13 @@ const ServicesSection = () => {
               <ul className="space-y-2">
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center text-gray-700">
-                    <div className="w-2 h-2 bg-electric rounded-full mr-3"></div>
+                    <div className="w-2 h-2 bg-sisyphus-accent rounded-full mr-3"></div>
                     {feature}
                   </li>
                 ))}
               </ul>
             </div>
           ))}
-        </div>
-
-        {/* Call to action */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-electric rounded-2xl p-8 text-white">
-            <h3 className="text-3xl font-bold mb-4">
-              ¿Tienes un proyecto en mente?
-            </h3>
-            <p className="text-xl mb-6 opacity-90">
-              Conversemos sobre cómo podemos hacer realidad tu visión digital.
-            </p>
-            <button 
-              onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-white text-electric px-8 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 hover-lift"
-            >
-              Iniciar conversación
-            </button>
-          </div>
         </div>
       </div>
     </section>

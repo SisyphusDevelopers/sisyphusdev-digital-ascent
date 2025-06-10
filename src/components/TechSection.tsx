@@ -11,8 +11,6 @@ const TechSection = () => {
     { name: "TypeScript", category: "Language", color: "from-blue-600 to-blue-800" },
   ];
 
-  const categories = ["Frontend", "Backend", "Database", "DevOps", "Cloud", "Language"];
-
   return (
     <section id="tecnologias" className="section-padding bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,34 +44,8 @@ const TechSection = () => {
           ))}
         </div>
 
-        {/* Categories breakdown */}
-        <div className="bg-gray-50 rounded-3xl p-8">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-            Nuestro stack tecnológico
-          </h3>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {categories.map((category, index) => {
-              const categoryTechs = technologies.filter(tech => tech.category === category);
-              return (
-                <div key={index} className="bg-white rounded-xl p-6">
-                  <h4 className="font-semibold text-gray-900 mb-3 text-lg">{category}</h4>
-                  <div className="space-y-2">
-                    {categoryTechs.map((tech, techIndex) => (
-                      <div key={techIndex} className="flex items-center">
-                        <div className={`w-3 h-3 bg-gradient-to-r ${tech.color} rounded-full mr-3`}></div>
-                        <span className="text-gray-700">{tech.name}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
         {/* Philosophy */}
-        <div className="mt-16 text-center">
+        <div className="text-center">
           <div className="max-w-4xl mx-auto">
             <h3 className="text-3xl font-bold text-gray-900 mb-6">
               Siempre aprendiendo, siempre evolucionando
