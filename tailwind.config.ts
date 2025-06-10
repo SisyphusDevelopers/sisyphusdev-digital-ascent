@@ -66,12 +66,15 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				electric: '#0066FF',
-				'electric-light': '#4D94FF',
-				'teal-electric': '#00D4AA',
-				'gray-900': '#0F172A',
-				'gray-800': '#1E293B',
-				'gray-100': '#F1F5F9'
+				// Sisyphus brand colors inspired by the logo
+				'sisyphus-dark': '#2A2B2F',
+				'sisyphus-medium': '#5A5B61',
+				'sisyphus-light': '#8B8C93',
+				'sisyphus-accent': '#6B7280',
+				'sisyphus-secondary': '#9CA3AF',
+				'gray-900': '#111827',
+				'gray-800': '#1F2937',
+				'gray-100': '#F9FAFB'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
