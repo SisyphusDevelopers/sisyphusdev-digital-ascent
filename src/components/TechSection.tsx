@@ -12,11 +12,11 @@ const TechSection = () => {
   ];
 
   return (
-    <section id="tecnologias" className="section-padding bg-white">
+    <section id="tecnologias" className="section-padding bg-gradient-to-br from-purple-50 via-white to-green-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Tecnologías que <span className="text-gradient">dominamos</span>
+            Tecnologías que <span className="text-gradient-purple">dominamos</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Trabajamos con las herramientas más modernas y eficientes del ecosistema de desarrollo, 
@@ -29,15 +29,15 @@ const TechSection = () => {
           {technologies.map((tech, index) => (
             <div 
               key={index} 
-              className="group bg-gray-50 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 hover-lift"
+              className="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center hover:shadow-xl hover:shadow-blue-100 transition-all duration-300 hover-lift border border-gray-100"
             >
-              <div className={`w-16 h-16 bg-gradient-to-r ${tech.color} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
+              <div className={`w-16 h-16 bg-gradient-to-r ${tech.color} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                 <span className="text-white font-bold text-lg">
                   {tech.name.charAt(0)}
                 </span>
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">{tech.name}</h3>
-              <span className="text-sm text-gray-500 px-3 py-1 bg-gray-100 rounded-full">
+              <span className="text-sm text-gray-500 px-3 py-1 bg-gradient-to-r from-gray-100 to-blue-50 rounded-full">
                 {tech.category}
               </span>
             </div>
@@ -46,9 +46,9 @@ const TechSection = () => {
 
         {/* Philosophy */}
         <div className="text-center">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto bg-white/60 backdrop-blur-sm rounded-3xl p-8 border border-purple-100">
             <h3 className="text-3xl font-bold text-gray-900 mb-6">
-              Siempre aprendiendo, siempre evolucionando
+              Siempre aprendiendo, siempre <span className="text-gradient-warm">evolucionando</span>
             </h3>
             <p className="text-lg text-gray-600 leading-relaxed">
               El mundo del desarrollo de software evoluciona constantemente. Por eso, nos mantenemos 

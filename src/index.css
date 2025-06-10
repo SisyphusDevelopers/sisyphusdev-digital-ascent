@@ -97,8 +97,28 @@
     @apply bg-gradient-to-r from-sisyphus-accent to-sisyphus-secondary bg-clip-text text-transparent;
   }
   
+  .text-gradient-purple {
+    @apply bg-gradient-to-r from-sisyphus-purple to-sisyphus-pink bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-warm {
+    @apply bg-gradient-to-r from-sisyphus-orange to-sisyphus-pink bg-clip-text text-transparent;
+  }
+  
   .bg-gradient-sisyphus {
     @apply bg-gradient-to-r from-sisyphus-accent to-sisyphus-secondary;
+  }
+  
+  .bg-gradient-purple {
+    @apply bg-gradient-to-r from-sisyphus-purple to-sisyphus-pink;
+  }
+  
+  .bg-gradient-warm {
+    @apply bg-gradient-to-r from-sisyphus-orange to-sisyphus-pink;
+  }
+  
+  .bg-gradient-cool {
+    @apply bg-gradient-to-r from-sisyphus-accent to-sisyphus-purple;
   }
   
   .hover-lift {
