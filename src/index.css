@@ -94,7 +94,7 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-sisyphus-accent to-sisyphus-secondary bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-sisyphus-accent to-sisyphus-teal bg-clip-text text-transparent;
   }
   
   .text-gradient-purple {
@@ -102,11 +102,15 @@
   }
   
   .text-gradient-warm {
-    @apply bg-gradient-to-r from-sisyphus-orange to-sisyphus-pink bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-sisyphus-orange to-sisyphus-accent bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-sage {
+    @apply bg-gradient-to-r from-sisyphus-sage to-sisyphus-teal bg-clip-text text-transparent;
   }
   
   .bg-gradient-sisyphus {
-    @apply bg-gradient-to-r from-sisyphus-accent to-sisyphus-secondary;
+    @apply bg-gradient-to-r from-sisyphus-accent to-sisyphus-teal;
   }
   
   .bg-gradient-purple {
@@ -114,11 +118,15 @@
   }
   
   .bg-gradient-warm {
-    @apply bg-gradient-to-r from-sisyphus-orange to-sisyphus-pink;
+    @apply bg-gradient-to-r from-sisyphus-orange to-sisyphus-accent;
   }
   
   .bg-gradient-cool {
-    @apply bg-gradient-to-r from-sisyphus-accent to-sisyphus-purple;
+    @apply bg-gradient-to-r from-sisyphus-secondary to-sisyphus-purple;
+  }
+  
+  .bg-gradient-sage {
+    @apply bg-gradient-to-r from-sisyphus-sage to-sisyphus-teal;
   }
   
   .hover-lift {

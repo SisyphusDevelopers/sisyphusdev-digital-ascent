@@ -3,7 +3,7 @@ import { Users, Lightbulb, Award, Heart } from 'lucide-react';
 
 const AboutSection = () => {
   return (
-    <section id="nosotros" className="section-padding bg-white">
+    <section id="nosotros" className="section-padding bg-sisyphus-soft-gray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-sisyphus-dark mb-6">
@@ -32,7 +32,7 @@ const AboutSection = () => {
           </div>
           
           <div className="relative">
-            <div className="aspect-square bg-gradient-to-br from-sisyphus-accent/10 to-sisyphus-secondary/10 rounded-3xl p-8 flex items-center justify-center">
+            <div className="aspect-square bg-gradient-to-br from-sisyphus-cream to-sisyphus-warm-beige border border-sisyphus-accent/20 rounded-3xl p-8 flex items-center justify-center shadow-lg">
               <div className="text-6xl">🚀</div>
             </div>
           </div>
@@ -41,7 +41,7 @@ const AboutSection = () => {
         {/* Values */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center group hover-lift">
-            <div className="w-16 h-16 bg-gradient-sisyphus rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <div className="w-16 h-16 bg-gradient-sisyphus rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
               <Lightbulb size={32} className="text-white" />
             </div>
             <h4 className="text-xl font-semibold text-sisyphus-dark mb-4">Innovación</h4>
@@ -52,7 +52,7 @@ const AboutSection = () => {
           </div>
 
           <div className="text-center group hover-lift">
-            <div className="w-16 h-16 bg-gradient-sisyphus rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <div className="w-16 h-16 bg-gradient-sage rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
               <Award size={32} className="text-white" />
             </div>
             <h4 className="text-xl font-semibold text-sisyphus-dark mb-4">Calidad</h4>
@@ -63,7 +63,7 @@ const AboutSection = () => {
           </div>
 
           <div className="text-center group hover-lift">
-            <div className="w-16 h-16 bg-gradient-sisyphus rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <div className="w-16 h-16 bg-gradient-purple rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
               <Heart size={32} className="text-white" />
             </div>
             <h4 className="text-xl font-semibold text-sisyphus-dark mb-4">Colaboración</h4>

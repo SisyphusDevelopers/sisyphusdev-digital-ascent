@@ -66,15 +66,20 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Sisyphus brand colors with vibrant accents
-				'sisyphus-dark': '#2A2B2F',
-				'sisyphus-medium': '#5A5B61',
-				'sisyphus-light': '#8B8C93',
-				'sisyphus-accent': '#3B82F6', // Blue accent
-				'sisyphus-secondary': '#10B981', // Green accent
-				'sisyphus-purple': '#8B5CF6', // Purple accent
-				'sisyphus-orange': '#F59E0B', // Orange accent
-				'sisyphus-pink': '#EC4899', // Pink accent
+				// Colossal-inspired palette with warm, sophisticated tones
+				'sisyphus-dark': '#1a1a1a',
+				'sisyphus-medium': '#4a4a4a',
+				'sisyphus-light': '#7a7a7a',
+				'sisyphus-cream': '#fdf6e8',
+				'sisyphus-warm-beige': '#f4f0e6',
+				'sisyphus-soft-gray': '#f8f7f4',
+				'sisyphus-accent': '#ff6b35', // Warm orange-red
+				'sisyphus-secondary': '#2d5a87', // Deep blue
+				'sisyphus-purple': '#6b46c1', // Rich purple
+				'sisyphus-orange': '#f59e0b', // Vibrant orange
+				'sisyphus-pink': '#ec4899', // Bright pink
+				'sisyphus-teal': '#14b8a6', // Modern teal
+				'sisyphus-sage': '#84cc16', // Fresh sage green
 				'gray-900': '#111827',
 				'gray-800': '#1F2937',
 				'gray-100': '#F9FAFB'

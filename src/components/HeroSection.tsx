@@ -10,12 +10,12 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="inicio" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-purple-50 to-green-50 relative overflow-hidden">
+    <section id="inicio" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-sisyphus-cream via-sisyphus-soft-gray to-sisyphus-warm-beige relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-r from-sisyphus-accent/20 to-sisyphus-purple/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-r from-sisyphus-secondary/20 to-sisyphus-pink/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-sisyphus-orange/10 to-sisyphus-accent/10 rounded-full blur-3xl"></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-r from-sisyphus-accent/15 to-sisyphus-teal/15 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-r from-sisyphus-sage/15 to-sisyphus-purple/15 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-sisyphus-orange/8 to-sisyphus-secondary/8 rounded-full blur-3xl"></div>
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
@@ -49,15 +49,15 @@ const HeroSection = () => {
           
           {/* Stats or additional info */}
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="text-center p-6 bg-white/70 backdrop-blur-sm rounded-2xl border border-sisyphus-accent/20 hover-lift">
+            <div className="text-center p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-sisyphus-accent/20 hover-lift shadow-sm">
               <div className="text-3xl font-bold text-gradient mb-2">100%</div>
               <div className="text-sisyphus-medium">Proyectos entregados a tiempo</div>
             </div>
-            <div className="text-center p-6 bg-white/70 backdrop-blur-sm rounded-2xl border border-sisyphus-secondary/20 hover-lift">
-              <div className="text-3xl font-bold text-gradient-purple mb-2">24/7</div>
+            <div className="text-center p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-sisyphus-teal/20 hover-lift shadow-sm">
+              <div className="text-3xl font-bold text-gradient-sage mb-2">24/7</div>
               <div className="text-sisyphus-medium">Soporte técnico dedicado</div>
             </div>
-            <div className="text-center p-6 bg-white/70 backdrop-blur-sm rounded-2xl border border-sisyphus-purple/20 hover-lift">
+            <div className="text-center p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-sisyphus-purple/20 hover-lift shadow-sm">
               <div className="text-3xl font-bold text-gradient-warm mb-2">∞</div>
               <div className="text-sisyphus-medium">Pasión por el código</div>
             </div>

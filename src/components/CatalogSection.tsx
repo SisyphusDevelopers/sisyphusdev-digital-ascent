@@ -42,13 +42,13 @@ const CatalogSection = () => {
   ];
 
   return (
-    <section id="catalogo" className="section-padding bg-gray-50">
+    <section id="catalogo" className="section-padding bg-sisyphus-soft-gray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Nuestro <span className="text-gradient">catálogo</span> de software
+          <h2 className="text-4xl md:text-5xl font-bold text-sisyphus-dark mb-6">
+            Nuestro <span className="text-gradient-sage">catálogo</span> de software
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-sisyphus-medium max-w-3xl mx-auto leading-relaxed">
             Soluciones de software listas para implementar, diseñadas con las mejores prácticas 
             y tecnologías modernas para impulsar tu negocio.
           </p>
@@ -56,36 +56,36 @@ const CatalogSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {catalogItems.map((item, index) => (
-            <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group hover-lift">
-              {/* Placeholder image */}
-              <div className="w-full h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                <Package size={48} className="text-gray-400" />
+            <div key={index} className="bg-white/90 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group hover-lift border border-sisyphus-accent/10">
+              {/* Placeholder image with gradient background */}
+              <div className="w-full h-48 bg-gradient-to-br from-sisyphus-cream via-sisyphus-warm-beige to-sisyphus-soft-gray flex items-center justify-center border-b border-sisyphus-accent/10">
+                <Package size={48} className="text-sisyphus-medium" />
               </div>
               
               <div className="p-6">
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-sm font-medium text-sisyphus-accent bg-gray-100 px-3 py-1 rounded-full">
+                  <span className="text-sm font-medium text-sisyphus-accent bg-sisyphus-cream px-3 py-1 rounded-full border border-sisyphus-accent/20">
                     {item.category}
                   </span>
-                  <div className="flex items-center space-x-1 text-yellow-500">
+                  <div className="flex items-center space-x-1 text-sisyphus-orange">
                     <Star size={16} fill="currentColor" />
-                    <span className="text-sm text-gray-600">5.0</span>
+                    <span className="text-sm text-sisyphus-medium">5.0</span>
                   </div>
                 </div>
                 
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-xl font-bold text-sisyphus-dark mb-3">
                   {item.title}
                 </h3>
                 
-                <p className="text-gray-600 mb-4 leading-relaxed text-sm">
+                <p className="text-sisyphus-medium mb-4 leading-relaxed text-sm">
                   {item.description}
                 </p>
                 
                 <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-gray-900 mb-2">Características principales:</h4>
+                  <h4 className="text-sm font-semibold text-sisyphus-dark mb-2">Características principales:</h4>
                   <ul className="space-y-1">
                     {item.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center text-sm text-gray-600">
+                      <li key={featureIndex} className="flex items-center text-sm text-sisyphus-medium">
                         <div className="w-1.5 h-1.5 bg-sisyphus-accent rounded-full mr-2"></div>
                         {feature}
                       </li>
@@ -109,7 +109,7 @@ const CatalogSection = () => {
 
         {/* Call to action */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-sisyphus rounded-2xl p-8 text-white">
+          <div className="bg-gradient-sisyphus rounded-2xl p-8 text-white shadow-xl">
             <h3 className="text-3xl font-bold mb-4">
               ¿No encuentras lo que buscas?
             </h3>
